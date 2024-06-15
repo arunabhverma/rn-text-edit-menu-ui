@@ -98,7 +98,7 @@ const MorphIcons = ({
         onPress && onPress();
       }}
       android_ripple={{
-        color: "rgba(0,0,0,0.1)",
+        color: theme.colors.ripple,
         foreground: true,
         borderless: true,
       }}

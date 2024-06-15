@@ -27,7 +27,7 @@ const EditMenuDemo = () => {
         {isVertical && (
           <Animated.View entering={FadeIn} exiting={FadeOut}>
             <Pressable
-              android_ripple={styles.rippleColor}
+              android_ripple={{ color: theme.colors.ripple }}
               style={[styles.horizontalButton, styles.verticalButton]}
             >
               <Text style={[styles.menuTextItem, { color: theme.colors.text }]}>
@@ -43,7 +43,7 @@ const EditMenuDemo = () => {
             style={styles.horizontalWrapper}
           >
             <Pressable
-              android_ripple={styles.rippleColor}
+              android_ripple={{ color: theme.colors.ripple }}
               style={styles.horizontalButton}
             >
               <Text style={[styles.menuTextItem, { color: theme.colors.text }]}>
@@ -51,7 +51,7 @@ const EditMenuDemo = () => {
               </Text>
             </Pressable>
             <Pressable
-              android_ripple={styles.rippleColor}
+              android_ripple={{ color: theme.colors.ripple }}
               style={styles.horizontalButton}
             >
               <Text style={[styles.menuTextItem, { color: theme.colors.text }]}>
